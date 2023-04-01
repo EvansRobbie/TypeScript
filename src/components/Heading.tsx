@@ -1,8 +1,11 @@
 import React from 'react'
 
-const Heading = () => {
+type HeadingProp = {
+    children: string
+}
+const Heading = ({children}: HeadingProp) => {
   return (
-    <div>Placeholder Heading</div>
+    <div>{children}</div>
   )
 }
 
